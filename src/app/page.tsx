@@ -178,7 +178,6 @@ export default function LandingPage() {
       }}
       title="Why Choose Premium Laundry Services?"
       description="We're not just a laundry service—we're your time back"
-      buttons={[{ text: "Schedule Your First Pickup", href: "#contact" }]}
     />
   </div>
 
