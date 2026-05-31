@@ -28,7 +28,7 @@ export default function PricingPage() {
             navItems={[
               { name: "Services", id: "services"},
               { name: "How It Works", id: "how-it-works"},
-              { name: "Pricing", href: "/pricing"},
+              { name: "Pricing", id: "/pricing"},
               { name: "About", id: "about"},
               { name: "Contact", id: "contact"},
             ]}
