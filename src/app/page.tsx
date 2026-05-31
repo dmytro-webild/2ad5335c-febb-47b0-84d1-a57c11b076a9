@@ -37,7 +37,7 @@ export default function LandingPage() {
         {
           name: "How It Works",          id: "how-it-works"},
         {
-          name: "Pricing",          href: "/pricing"},
+          name: "Pricing",          id: "/pricing"},
         {
           name: "About",          id: "about"},
         {
