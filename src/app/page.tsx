@@ -72,7 +72,7 @@ export default function LandingPage() {
       ]}
       rightCarouselItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/courier-doing-jobs-logistics_23-2149229220.jpg",          imageAlt: "A white laundry delivery van"},
+          imageSrc: "http://img.b2bpic.net/free-photo/courier-doing-jobs-logistics_23-2149229220.jpg?_wi=1",          imageAlt: "A white laundry delivery van"},
         {
           imageSrc: "http://img.b2bpic.net/free-photo/bed-arrangement-with-fresh-sheets_23-2150551122.jpg",          imageAlt: "A pile of clean, soft clothes"},
         {
@@ -292,7 +292,7 @@ export default function LandingPage() {
         }
       ]}
       buttonText="Schedule Now"
-      imageSrc="http://img.b2bpic.net/free-photo/courier-doing-jobs-logistics_23-2149229220.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/courier-doing-jobs-logistics_23-2149229220.jpg?_wi=2"
       imageAlt="A white laundry delivery van"
       mediaPosition="right"
     />
