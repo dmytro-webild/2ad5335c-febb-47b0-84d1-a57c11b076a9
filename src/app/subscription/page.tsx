@@ -60,6 +60,7 @@ export default function SubscriptionPage() {
             description="Enter your payment details to finalize your plan. All transactions are secure and encrypted."
             tag="Secure Payment Gateway"
             tagIcon={CreditCard}
+            useInvertedBackground={false}
             inputPlaceholder="Card Number"
             buttonText="Pay Now"
             centered={true}
