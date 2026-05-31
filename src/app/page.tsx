@@ -43,7 +43,7 @@ export default function LandingPage() {
         {
           name: "Contact",          id: "contact"},
       ]}
-      brandName="LaundryFlow"
+      brandName="Premium Landry Services"
       button={{
         text: "Book Now",        href: "#booking"}}
       animateOnLoad={true}
@@ -172,7 +172,7 @@ export default function LandingPage() {
         items: [
           "Fast Turnaround: 48-hour standard, same-day available for urgent needs.",          "Professional Care: Expert handling of all fabric types for spotless results.",          "Local & Trusted: Licensed LLC serving Augusta, GA since 2024 with a smile.",          "Flexible Scheduling: Schedule pickups that fit seamlessly into your busy lifestyle."],
       }}
-      title="Why Choose LaundryFlow?"
+      title="Why Choose Premium Landry Services?"
       description="We're not just a laundry service—we're your time back"
     />
   </div>
@@ -271,8 +271,8 @@ export default function LandingPage() {
       <MediaAbout
       useInvertedBackground={true}
       tag="Our Story"
-      title="About LaundryFlow"
-      description="We created this business to make life easier for busy families and professionals in Augusta, Georgia. Our goal is to provide fast, reliable, and professional laundry services with modern convenience. Every wash, fold, and delivery is handled with care because we know your time is valuable. LaundryFlow is a Georgia LLC dedicated to transforming laundry day from a chore into a convenience. We combine traditional care with modern logistics technology to deliver an experience that's as simple as ordering food or calling a rideshare—but for your laundry."
+      title="About Premium Landry Services"
+      description="We created this business to make life easier for busy families and professionals in Augusta, Georgia. Our goal is to provide fast, reliable, and professional laundry services with modern convenience. Every wash, fold, and delivery is handled with care because we know your time is valuable. Premium Landry Services is a Georgia LLC dedicated to transforming laundry day from a chore into a convenience. We combine traditional care with modern logistics technology to deliver an experience that's as simple as ordering food or calling a rideshare—but for your laundry."
       imageSrc="http://img.b2bpic.net/free-photo/volunteer-selecting-organizing-clothes-donations-charity_23-2149230518.jpg"
       imageAlt="Clean modern laundry station"
     />
@@ -300,8 +300,8 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterBase
-      logoText="LaundryFlow"
-      copyrightText="© 2024 LaundryFlow LLC. All rights reserved. Serving Augusta, Georgia."
+      logoText="Premium Landry Services"
+      copyrightText="© 2024 Premium Landry Services LLC. All rights reserved. Serving Augusta, Georgia."
       columns={[
         {
           title: "Navigation",          items: [
