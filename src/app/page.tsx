@@ -37,7 +37,7 @@ export default function LandingPage() {
         {
           name: "How It Works",          id: "how-it-works"},
         {
-          name: "Pricing",          id: "pricing"},
+          name: "Pricing",          href: "/pricing"},
         {
           name: "About",          id: "about"},
         {
@@ -187,7 +187,7 @@ export default function LandingPage() {
           id: "basic",          badge: "Occasional",          price: "$45",          subtitle: "per load",          features: [
             "Standard wash & fold",            "48-hour turnaround",            "Free pickup & delivery",            "Professional care"],
           buttons: [{
-            text: "Get Monthly Subscription",            href: "#contact"
+            text: "Get Monthly Subscription",            href: "/contact"
           }]
         },
         {
@@ -195,14 +195,14 @@ export default function LandingPage() {
           price: "$89",          subtitle: "per month",          features: [
             "4 pickups per month",            "48-hour turnaround",            "Priority scheduling",            "Free pickup & delivery",            "10% savings vs. per-load",            "Dedicated support"],
           buttons: [{
-            text: "Get Monthly Subscription",            href: "#contact"
+            text: "Get Monthly Subscription",            href: "/contact"
           }]
         },
         {
           id: "family",          badge: "Best Value",          price: "$159",          subtitle: "per month",          features: [
             "Unlimited pickups",            "48-hour turnaround",            "Premium member priority",            "Free pickup & delivery",            "Free delicate service",            "SMS status updates",            "24/7 support"],
           buttons: [{
-            text: "Get Monthly Subscription",            href: "#contact"
+            text: "Get Monthly Subscription",            href: "/contact"
           }]
         },
       ]}
@@ -316,7 +316,7 @@ export default function LandingPage() {
           title: "Navigation",          items: [
             { label: "Services", href: "#services" },
             { label: "How It Works", href: "#how-it-works" },
-            { label: "Pricing", href: "#pricing" },
+            { label: "Pricing", href: "/pricing" },
             { label: "About", href: "#about" },
             { label: "Contact", href: "#contact" }
           ]
