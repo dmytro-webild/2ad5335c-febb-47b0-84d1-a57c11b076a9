@@ -8,8 +8,8 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import { CreditCard, Sparkles } from "lucide-react";
 
 export default function SubscriptionPage() {
-  const handlePayment = (data: Record<string, string>) => {
-    console.log("Payment Data:", data);
+  const handlePayment = (email: string) => {
+    console.log("Payment Email:", email);
     alert("Subscription process initiated! (This is a demo. No actual payment processed.)");
     // Here you would integrate with Stripe/PayPal SDK to handle payment
     // e.g., stripe.redirectToCheckout({ /* ... */ });
