@@ -11,8 +11,8 @@ import { Archivo } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'LaundryFlow | Laundry Day Made Easy in Augusta, GA',
-  description: 'Professional wash & fold laundry service with pickup and delivery in Augusta, GA. Enjoy free time with fresh, folded clothes.',
+  title: 'Premium Landry Services | Laundry Day Made Easy in Augusta, GA',
+  description: 'Professional wash & fold laundry service with pickup and delivery in Augusta, GA. Enjoy free time with fresh, folded clothes with Premium Landry Services.',
   keywords: ["laundry service Augusta GA, wash and fold, laundry pickup delivery, same-day laundry, Augusta Georgia laundry"],
   openGraph: {
     "title": "LaundryFlow - Laundry Day Made Easy",
