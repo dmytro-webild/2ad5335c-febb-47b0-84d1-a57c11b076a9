@@ -12,7 +12,7 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
-import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap } from "lucide-react";
+import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap, CheckCircle } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -39,9 +39,13 @@ export default function LandingPage() {
         {
           name: "Pricing",          id: "/pricing"},
         {
+          name: "Subscriptions",          id: "/subscription-payments"},
+        {
           name: "About",          id: "about"},
         {
           name: "Contact",          id: "contact"},
+        {
+          name: "Track Delivery",          id: "/delivery-tracking"}
       ]}
       brandName="Premium Laundry Services"
       button={{
@@ -317,8 +321,10 @@ export default function LandingPage() {
             { label: "Services", href: "#services" },
             { label: "How It Works", href: "#how-it-works" },
             { label: "Pricing", href: "/pricing" },
+            { label: "Subscriptions", href: "/subscription-payments" },
             { label: "About", href: "#about" },
-            { label: "Contact", href: "#contact" }
+            { label: "Contact", href: "#contact" },
+            { label: "Track Delivery", href: "/delivery-tracking" }
           ]
         }
       ]}
