@@ -9,7 +9,7 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap } from "lucide-react";
@@ -38,6 +38,8 @@ export default function LandingPage() {
           name: "How It Works",          id: "#how-it-works"},
         {
           name: "Pricing",          id: "/pricing"},
+        {
+          name: "Subscribe",          id: "/subscription"},
         {
           name: "About",          id: "#about"},
         {
@@ -179,39 +181,7 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="pricing" data-section="pricing">
-      <PricingCardTwo
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
-      plans={[
-        {
-          id: "basic",          badge: "Occasional",          price: "$45",          subtitle: "per load",          features: [
-            "Standard wash & fold",            "48-hour turnaround",            "Free pickup & delivery",            "Professional care"],
-          buttons: [{
-            text: "Get Monthly Subscription",            href: "/contact"
-          }]
-        },
-        {
-          id: "premium",          badge: "Most Popular",          badgeIcon: Sparkles,
-          price: "$89",          subtitle: "per month",          features: [
-            "4 pickups per month",            "48-hour turnaround",            "Priority scheduling",            "Free pickup & delivery",            "10% savings vs. per-load",            "Dedicated support"],
-          buttons: [{
-            text: "Get Monthly Subscription",            href: "/contact"
-          }]
-        },
-        {
-          id: "family",          badge: "Best Value",          price: "$159",          subtitle: "per month",          features: [
-            "Unlimited pickups",            "48-hour turnaround",            "Premium member priority",            "Free pickup & delivery",            "Free delicate service",            "SMS status updates",            "24/7 support"],
-          buttons: [{
-            text: "Get Monthly Subscription",            href: "/contact"
-          }]
-        },
-      ]}
-      title="Simple, Transparent Pricing"
-      description="Choose the plan that works best for you"
-    />
-  </div>
+  
 
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardSixteen
@@ -319,6 +289,7 @@ export default function LandingPage() {
             { label: "Services", href: "#services" },
             { label: "How It Works", href: "#how-it-works" },
             { label: "Pricing", href: "/pricing" },
+            { label: "Subscribe", href: "/subscription" },
             { label: "About", href: "#about" },
             { label: "Contact", href: "#contact" },
             { label: "Schedule Pickup", href: "/schedule-pickup" }

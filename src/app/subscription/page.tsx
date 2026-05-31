@@ -3,11 +3,18 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+import ContactForm from '@/components/form/ContactForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles } from "lucide-react";
+import { CreditCard, Sparkles } from "lucide-react";
 
-export default function PricingPage() {
+export default function SubscriptionPage() {
+  const handlePayment = (data: Record<string, string>) => {
+    console.log("Payment Data:", data);
+    alert("Subscription process initiated! (This is a demo. No actual payment processed.)");
+    // Here you would integrate with Stripe/PayPal SDK to handle payment
+    // e.g., stripe.redirectToCheckout({ /* ... */ });
+  };
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-shift"
@@ -47,37 +54,17 @@ export default function PricingPage() {
           />
         </div>
 
-        <div id="pricing" data-section="pricing">
-          <PricingCardTwo
-            animationType="slide-up"
-            textboxLayout="default"
-            useInvertedBackground={false}
-            plans={[
-              {
-                id: "basic", badge: "Occasional", price: "$45", subtitle: "per load", features: [
-                  "Standard wash & fold", "48-hour turnaround", "Free pickup & delivery", "Professional care"],
-                buttons: [{
-                  text: "Subscribe Now", href: "/subscription"
-                }]
-              },
-              {
-                id: "premium", badge: "Most Popular", badgeIcon: Sparkles,
-                price: "$89", subtitle: "per month", features: [
-                  "4 pickups per month", "48-hour turnaround", "Priority scheduling", "Free pickup & delivery", "10% savings vs. per-load", "Dedicated support"],
-                buttons: [{
-                  text: "Subscribe Now", href: "/subscription"
-                }]
-              },
-              {
-                id: "family", badge: "Best Value", price: "$159", subtitle: "per month", features: [
-                  "Unlimited pickups", "48-hour turnaround", "Premium member priority", "Free pickup & delivery", "Free delicate service", "SMS status updates", "24/7 support"],
-                buttons: [{
-                  text: "Subscribe Now", href: "/subscription"
-                }]
-              },
-            ]}
-            title="Simple, Transparent Pricing"
-            description="Choose the plan that works best for you and proceed to checkout"
+        <div id="subscription" data-section="subscription">
+          <ContactForm
+            title="Complete Your Subscription"
+            description="Enter your payment details to finalize your plan. All transactions are secure and encrypted."
+            tag="Secure Payment Gateway"
+            tagIcon={CreditCard}
+            inputPlaceholder="Card Number"
+            buttonText="Pay Now"
+            centered={true}
+            onSubmit={handlePayment}
+            formWrapperClassName="max-w-md mx-auto py-12 px-6"
           />
         </div>
 
