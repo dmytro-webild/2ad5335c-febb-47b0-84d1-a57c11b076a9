@@ -12,7 +12,7 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
-import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap, CheckCircle } from "lucide-react";
+import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -33,23 +33,21 @@ export default function LandingPage() {
       <NavbarLayoutFloatingInline
       navItems={[
         {
-          name: "Services",          id: "services"},
+          name: "Services",          id: "#services"},
         {
-          name: "How It Works",          id: "how-it-works"},
+          name: "How It Works",          id: "#how-it-works"},
         {
           name: "Pricing",          id: "/pricing"},
         {
-          name: "Subscriptions",          id: "/subscription-payments"},
+          name: "About",          id: "#about"},
         {
-          name: "About",          id: "about"},
+          name: "Contact",          id: "#contact"},
         {
-          name: "Contact",          id: "contact"},
-        {
-          name: "Track Delivery",          id: "/delivery-tracking"}
+          name: "Schedule Pickup",          id: "/schedule-pickup"},
       ]}
       brandName="Premium Laundry Services"
       button={{
-        text: "Book Now",        href: "#booking"}}
+        text: "Schedule Pickup",        href: "/schedule-pickup"}}
       animateOnLoad={true}
     />
   </div>
@@ -91,7 +89,7 @@ export default function LandingPage() {
       tag="✨ Fresh Clothes, Zero Stress"
       buttons={[
         {
-          text: "Schedule Pickup",          href: "#booking"},
+          text: "Schedule Pickup",          href: "/schedule-pickup"},
         {
           text: "Learn More",          href: "#about"},
       ]}
@@ -178,7 +176,6 @@ export default function LandingPage() {
       }}
       title="Why Choose Premium Laundry Services?"
       description="We're not just a laundry service—we're your time back"
-      buttons={[{ text: "Schedule Your First Pickup", href: "#contact" }]}
     />
   </div>
 
@@ -322,10 +319,9 @@ export default function LandingPage() {
             { label: "Services", href: "#services" },
             { label: "How It Works", href: "#how-it-works" },
             { label: "Pricing", href: "/pricing" },
-            { label: "Subscriptions", href: "/subscription-payments" },
             { label: "About", href: "#about" },
             { label: "Contact", href: "#contact" },
-            { label: "Track Delivery", href: "/delivery-tracking" }
+            { label: "Schedule Pickup", href: "/schedule-pickup" }
           ]
         }
       ]}
