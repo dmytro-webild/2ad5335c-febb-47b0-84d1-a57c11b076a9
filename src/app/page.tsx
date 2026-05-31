@@ -33,19 +33,21 @@ export default function LandingPage() {
       <NavbarLayoutFloatingInline
       navItems={[
         {
-          name: "Services",          id: "services"},
+          name: "Services",          id: "#services"},
         {
-          name: "How It Works",          id: "how-it-works"},
+          name: "How It Works",          id: "#how-it-works"},
         {
           name: "Pricing",          id: "/pricing"},
         {
-          name: "About",          id: "about"},
+          name: "About",          id: "#about"},
         {
-          name: "Contact",          id: "contact"},
+          name: "Contact",          id: "#contact"},
+        {
+          name: "Schedule Pickup",          id: "/schedule-pickup"},
       ]}
       brandName="Premium Laundry Services"
       button={{
-        text: "Book Now",        href: "#booking"}}
+        text: "Schedule Pickup",        href: "/schedule-pickup"}}
       animateOnLoad={true}
     />
   </div>
@@ -87,7 +89,7 @@ export default function LandingPage() {
       tag="✨ Fresh Clothes, Zero Stress"
       buttons={[
         {
-          text: "Schedule Pickup",          href: "#booking"},
+          text: "Schedule Pickup",          href: "/schedule-pickup"},
         {
           text: "Learn More",          href: "#about"},
       ]}
@@ -318,7 +320,8 @@ export default function LandingPage() {
             { label: "How It Works", href: "#how-it-works" },
             { label: "Pricing", href: "/pricing" },
             { label: "About", href: "#about" },
-            { label: "Contact", href: "#contact" }
+            { label: "Contact", href: "#contact" },
+            { label: "Schedule Pickup", href: "/schedule-pickup" }
           ]
         }
       ]}
