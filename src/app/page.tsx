@@ -275,7 +275,6 @@ export default function LandingPage() {
       description="We created this business to make life easier for busy families and professionals in Augusta, Georgia. Our goal is to provide fast, reliable, and professional laundry services with modern convenience. Every wash, fold, and delivery is handled with care because we know your time is valuable. LaundryFlow is a Georgia LLC dedicated to transforming laundry day from a chore into a convenience. We combine traditional care with modern logistics technology to deliver an experience that's as simple as ordering food or calling a rideshare—but for your laundry."
       imageSrc="http://img.b2bpic.net/free-photo/volunteer-selecting-organizing-clothes-donations-charity_23-2149230518.jpg"
       imageAlt="Clean modern laundry station"
-      mediaAnimation="opacity"
     />
   </div>
 
