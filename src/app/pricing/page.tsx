@@ -29,10 +29,8 @@ export default function PricingPage() {
               { name: "Services", id: "services"},
               { name: "How It Works", id: "how-it-works"},
               { name: "Pricing", id: "/pricing"},
-              { name: "Subscriptions", id: "/subscription-payments" },
               { name: "About", id: "about"},
               { name: "Contact", id: "contact"},
-              { name: "Track Delivery", id: "/delivery-tracking" }
             ]}
             brandName="Premium Laundry Services"
             button={{ text: "Book Now", href: "#booking"}}
@@ -100,10 +98,8 @@ export default function PricingPage() {
                   { label: "Services", href: "#services" },
                   { label: "How It Works", href: "#how-it-works" },
                   { label: "Pricing", href: "/pricing" },
-                  { label: "Subscriptions", href: "/subscription-payments" },
                   { label: "About", href: "#about" },
-                  { label: "Contact", href: "#contact" },
-                  { label: "Track Delivery", href: "/delivery-tracking" }
+                  { label: "Contact", href: "#contact" }
                 ]
               }
             ]}
