@@ -9,7 +9,7 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
+import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import { Calendar, Facebook, Home, Instagram, Linkedin, Sparkles, Truck, Twitter, Zap } from "lucide-react";
@@ -178,7 +178,7 @@ export default function LandingPage() {
   </div>
 
   <div id="pricing" data-section="pricing">
-      <PricingCardOne
+      <PricingCardTwo
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
@@ -186,15 +186,24 @@ export default function LandingPage() {
         {
           id: "basic",          badge: "Occasional",          price: "$45",          subtitle: "per load",          features: [
             "Standard wash & fold",            "48-hour turnaround",            "Free pickup & delivery",            "Professional care"],
+          buttons: [{
+            text: "Get Monthly Subscription",            href: "#contact"
+          }]
         },
         {
           id: "premium",          badge: "Most Popular",          badgeIcon: Sparkles,
           price: "$89",          subtitle: "per month",          features: [
             "4 pickups per month",            "48-hour turnaround",            "Priority scheduling",            "Free pickup & delivery",            "10% savings vs. per-load",            "Dedicated support"],
+          buttons: [{
+            text: "Get Monthly Subscription",            href: "#contact"
+          }]
         },
         {
           id: "family",          badge: "Best Value",          price: "$159",          subtitle: "per month",          features: [
             "Unlimited pickups",            "48-hour turnaround",            "Premium member priority",            "Free pickup & delivery",            "Free delicate service",            "SMS status updates",            "24/7 support"],
+          buttons: [{
+            text: "Get Monthly Subscription",            href: "#contact"
+          }]
         },
       ]}
       title="Simple, Transparent Pricing"
